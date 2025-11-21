@@ -11,7 +11,7 @@ $pageTitle = "Christ Ekklesia Fellowship Chapel - Where Christ Takes Preeminence
 $pageDescription = "Join Christ Ekklesia Fellowship Chapel in Kabarak, Nakuru for authentic worship, biblical teaching, and vibrant Christian fellowship. Experience God's love in our welcoming community.";
 $pageKeywords = "Christ Ekklesia Fellowship Chapel, church Nakuru, Kabarak church, Christian fellowship, worship service, bible study, ministry, Kenya church";
 $pageType = "website";
-$pageImage = "/assets/images/church-hero.jpg";
+$pageImage = "https://res.cloudinary.com/dtpevimcr/image/upload/v1763730951/img1_gqptig.jpg";
 
 // Page-specific scripts
 $pageScripts = [
@@ -324,7 +324,7 @@ include dirname(__DIR__) . '/includes/header.php';
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="gallery-item">
-                        <img src="./assets/images/worship-service.jpg" alt="Worship Service">
+                        <img src="https://res.cloudinary.com/dtpevimcr/image/upload/v1763730951/img1_gqptig.jpg" alt="Worship Service">
                         <div class="gallery-overlay">
                             <span>Sunday Worship</span>
                         </div>
@@ -332,9 +332,9 @@ include dirname(__DIR__) . '/includes/header.php';
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="gallery-item">
-                        <img src="./assets/images/prayer.jpg" alt="Prayer Meeting">
+                        <img src="https://res.cloudinary.com/dtpevimcr/image/upload/v1763730950/ministers_lytcuc.jpg" alt="Worship Ministry">
                         <div class="gallery-overlay">
-                            <span>Prayer & Fellowship</span>
+                            <span>Ministers</span>
                         </div>
                     </div>
                 </div>
@@ -722,7 +722,7 @@ include dirname(__DIR__) . '/includes/header.php';
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="ministry-card">
-                        <img src="./assets/images/worship-team.jpg" alt="Worship Ministry" class="ministry-card-image">
+                        <img src="https://res.cloudinary.com/dtpevimcr/image/upload/v1763730950/ministers_lytcuc.jpg" alt="Worship Ministry" class="ministry-card-image">
                         <div class="ministry-card-content">
                             <div class="ministry-card-title">
                                 <i class="fas fa-music service-icon"></i>
@@ -816,6 +816,23 @@ include dirname(__DIR__) . '/includes/header.php';
                             </div>
                             <div class="ministry-card-description">
                                 Showing Christ's love through compassionate care and support for those in need.
+                            </div>
+                            <div class="ministry-card-actions">
+                                <a href="#" class="btn btn-outline-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="ministry-card">
+                        <img src="https://res.cloudinary.com/dtpevimcr/image/upload/v1763732158/prayer_and_intercession_e87lug.jpg" alt="Prayer & Intercession" class="ministry-card-image">
+                        <div class="ministry-card-content">
+                            <div class="ministry-card-title">
+                                <i class="fas fa-hands-praying service-icon"></i>
+                                <h5>Prayer & Intercession</h5>
+                            </div>
+                            <div class="ministry-card-description">
+                                Seeking God's presence through focused prayer and intercession for our community and world.
                             </div>
                             <div class="ministry-card-actions">
                                 <a href="#" class="btn btn-outline-light">Learn More</a>

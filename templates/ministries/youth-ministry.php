@@ -10,7 +10,7 @@ $pageTitle = "Youth Ministry - Christ Ekklesia Fellowship Chapel | Empowering Yo
 $pageDescription = "Join our vibrant Youth Ministry at Christ Ekklesia Fellowship Chapel. Raising a Christ-centered generation equipped to live and lead for Jesus in Kabarak, Nakuru.";
 $pageKeywords = "youth ministry, young adults, teenagers, Christian youth, discipleship, Kabarak youth, Christ Ekklesia youth, church youth group";
 $pageType = "article";
-$pageImage = "/assets/images/youth-ministry-hero.jpg";
+$pageImage = "https://res.cloudinary.com/dtpevimcr/image/upload/v1763730953/hero_af9pf9.jpg";
 
 // Page-specific scripts
 $pageScripts = [
@@ -23,7 +23,7 @@ include dirname(__DIR__) . '/../includes/header.php';
 <!-- Main Content -->
 <main id="main-content" class="ministry-section container-fluid px-0">
     <!-- Ministry Hero Section -->
-    <section class="ministry-hero-section position-relative mb-5" style="background: linear-gradient(rgba(96, 55, 158, 0.8), rgba(142, 68, 173, 0.8)), url('/assets/images/youth-ministry-hero.jpg') center/cover no-repeat; min-height: 400px; display: flex; align-items: center; justify-content: center;">
+    <section class="ministry-hero-section position-relative mb-5" style="background: linear-gradient(rgba(96, 55, 158, 0.8), rgba(142, 68, 173, 0.8)), url('https://res.cloudinary.com/dtpevimcr/image/upload/v1763730953/hero_af9pf9.jpg') center/cover no-repeat; min-height: 400px; display: flex; align-items: center; justify-content: center;">
         <div class="container text-center text-white py-5">
             <div class="hero-content animate-fade-in">
                 <h1 class="display-4 fw-bold mb-3" style="text-shadow: 0 4px 20px rgba(0,0,0,0.3);">Youth Ministry</h1>
@@ -46,7 +46,7 @@ include dirname(__DIR__) . '/../includes/header.php';
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <div class="ministry-intro mb-5 text-center">
-                    <img src="/assets/images/youths.jpg" alt="Youth Ministry" class="img-fluid rounded shadow mb-4" loading="lazy">
+                    <img src="https://res.cloudinary.com/dtpevimcr/image/upload/v1763730953/hero_af9pf9.jpg" alt="Youth Ministry" class="img-fluid rounded shadow mb-4" loading="lazy">
                     <p class="lead">Our Youth Ministry is passionate about empowering the next generation to know God deeply, live boldly for Christ, and impact their world with the Gospel. We believe young people are not just the church of tomorrow, but the church of today.</p>
                 </div>
 

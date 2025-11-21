@@ -36,7 +36,7 @@ include dirname(__DIR__) . '/../includes/header.php';
         left: 0;
         right: 0;
         bottom: 0;
-        background: url('../../assets/images/ushering.jpg') center/cover;
+        background: url('https://res.cloudinary.com/dtpevimcr/image/upload/v1763730951/ushering_pyeaaw.jpg') center/cover;
         opacity: 0.3;
         z-index: 1;
     }

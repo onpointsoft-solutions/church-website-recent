@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .carousel-item {
     background: linear-gradient(135deg, rgba(214, 212, 216, 0.5) 0%, rgba(71, 50, 87, 0.5) 50%, rgba(78, 46, 146, 0.9) 100%),
-                url('./assets/images/hero-section.jpg');
+                url('https://res.cloudinary.com/dtpevimcr/image/upload/v1763730951/img1_gqptig.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

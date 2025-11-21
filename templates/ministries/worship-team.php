@@ -10,7 +10,7 @@ $pageTitle = "Worship Team Ministry - Christ Ekklesia Fellowship Chapel";
 $pageDescription = "Join our Worship Team Ministry at Christ Ekklesia Fellowship Chapel. Lead the congregation in Spirit-filled worship through music, singing, and heartfelt praise in Kabarak, Nakuru.";
 $pageKeywords = "worship team, church music ministry, praise and worship, Kabarak church music, Christ Ekklesia worship, church choir, music ministry";
 $pageType = "article";
-$pageImage = "/assets/images/worship-team-hero.jpg";
+$pageImage = "https://res.cloudinary.com/dtpevimcr/image/upload/v1763730952/cam_bbxh79.jpg";
 
 // Page-specific scripts
 $pageScripts = [
@@ -23,7 +23,7 @@ include dirname(__DIR__) . '/../includes/header.php';
 <!-- Main Content -->
 <main id="main-content" class="ministry-section container-fluid px-0">
     <!-- Ministry Hero Section -->
-    <section class="ministry-hero-section position-relative mb-5" style="background: linear-gradient(rgba(96, 55, 158, 0.8), rgba(142, 68, 173, 0.8)), url('/assets/images/worship-team-hero.jpg') center/cover no-repeat; min-height: 400px; display: flex; align-items: center; justify-content: center;">
+    <section class="ministry-hero-section position-relative mb-5" style="background: linear-gradient(rgba(96, 55, 158, 0.8), rgba(142, 68, 173, 0.8)), url('https://res.cloudinary.com/dtpevimcr/image/upload/v1763730952/cam_bbxh79.jpg') center/cover no-repeat; min-height: 400px; display: flex; align-items: center; justify-content: center;">
         <div class="container text-center text-white py-5">
             <div class="hero-content animate-fade-in">
                 <h1 class="display-4 fw-bold mb-3" style="text-shadow: 0 4px 20px rgba(0,0,0,0.3);">Worship Team Ministry</h1>
@@ -46,7 +46,7 @@ include dirname(__DIR__) . '/../includes/header.php';
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <div class="ministry-intro mb-5 text-center">
-                    <img src="/assets/images/worship-team.jpg" alt="Worship Team Ministry" class="img-fluid rounded shadow mb-4" loading="lazy">
+                    <img src="https://res.cloudinary.com/dtpevimcr/image/upload/v1763730952/cam_bbxh79.jpg" alt="Worship Team Ministry" class="img-fluid rounded shadow mb-4" loading="lazy">
                     <p class="lead">Music and worship are central to our faith expression at Christ Ekklesia Fellowship Chapel. Our Worship Team is dedicated to creating an atmosphere where hearts can connect with God through powerful, authentic worship.</p>
                 </div>
                     
