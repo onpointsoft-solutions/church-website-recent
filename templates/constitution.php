@@ -3,35 +3,64 @@ $pageTitle = "Constitution | Christ Ekklesia Fellowship Chapel";
 include dirname(__DIR__) . '/includes/header.php'; 
 ?>
 
-<div class="constitution-section container my-5">
-   <!-- Hero Section -->
-   <section class="hero-section position-relative mb-5" style="background: url('../assets/images/worship-service.jpg') center/cover no-repeat; min-height: 320px; display: flex; align-items: center; justify-content: center;">
-        <div class="container text-center text-white py-5" style="background: rgba(76,29,149,0.24); border-radius: 1.5rem;">
-            <h1 class="display-4 fw-bold mb-2" style="text-shadow: 0 4px 20px rgba(0,0,0,0.25);">Christ Ekklesia Fellowship Chapel Constitution</h1>
-            <p class="lead mb-0">Our Foundation, Faith & Governance</p>
+<div class="constitution-section container-fluid px-0">
+   <!-- Enhanced Hero Section -->
+   <section class="hero-section position-relative mb-5" style="background: linear-gradient(135deg, rgba(96, 55, 158, 0.95) 0%, rgba(142, 68, 173, 0.9) 100%), url('../assets/images/worship-service.jpg') center/cover no-repeat; min-height: 450px; display: flex; align-items: center; justify-content: center;">
+        <div class="container text-center text-white py-5">
+            <div class="animate-fade-in">
+                <div class="mb-3">
+                    <i class="fas fa-book-open" style="font-size: 4rem; color: #f59e0b; filter: drop-shadow(0 4px 10px rgba(245, 158, 11, 0.3));"></i>
+                </div>
+                <h1 class="display-3 fw-bold mb-3" style="text-shadow: 0 4px 20px rgba(0,0,0,0.5); font-family: 'Playfair Display', serif;">Church Constitution</h1>
+                <p class="lead mb-4" style="font-size: 1.3rem; text-shadow: 0 2px 10px rgba(0,0,0,0.4);">Our Foundation, Faith & Governance</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <span class="badge bg-light text-dark px-3 py-2"><i class="fas fa-cross me-2"></i>Biblical Foundation</span>
+                    <span class="badge bg-light text-dark px-3 py-2"><i class="fas fa-users me-2"></i>Church Governance</span>
+                    <span class="badge bg-light text-dark px-3 py-2"><i class="fas fa-heart me-2"></i>Our Values</span>
+                </div>
+            </div>
         </div>
     </section>
-    <div class="container" style="max-width: 900px;">
-    <div style="height: 30px"></div>
+    <div class="container" style="max-width: 1000px;">
 
-    <h1>Christ Ekklesia Fellowship Chapel Constitution</h1>
-    <nav class="toc">
-        <h2>Contents</h2>
-        <ul>
-            <li><a href="#chapter1">CHAPTER 1: Preamble</a></li>
-            <li><a href="#chapter2">CHAPTER 2: The Church</a></li>
-            <li><a href="#chapter3">CHAPTER 3: Leadership</a></li>
-            <li><a href="#chapter4">CHAPTER 4: Government</a></li>
-            <li><a href="#chapter5">CHAPTER 5: Church Meetings</a></li>
-            <li><a href="#chapter6">CHAPTER 6: Formation of Church Branches</a></li>
-            <li><a href="#chapter7">CHAPTER 7: Amendments to the Constitution</a></li>
-            <li><a href="#chapter8">CHAPTER 8: Dissolution</a></li>
-        </ul>
-    </nav>
+    <!-- Table of Contents Card -->
+    <div class="card shadow-lg border-0 mb-5 animate-fade-in" style="border-radius: 15px; overflow: hidden;">
+        <div class="card-header text-white text-center py-4" style="background: linear-gradient(135deg, var(--primary-purple), var(--secondary-purple));">
+            <h2 class="mb-0" style="font-family: 'Playfair Display', serif;"><i class="fas fa-list-ul me-2"></i>Table of Contents</h2>
+        </div>
+        <div class="card-body p-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled constitution-toc">
+                        <li class="mb-3"><a href="#chapter1" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 1: Preamble</span></a></li>
+                        <li class="mb-3"><a href="#chapter2" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 2: The Church</span></a></li>
+                        <li class="mb-3"><a href="#chapter3" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 3: Leadership</span></a></li>
+                        <li class="mb-3"><a href="#chapter4" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 4: Government</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled constitution-toc">
+                        <li class="mb-3"><a href="#chapter5" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 5: Church Meetings</span></a></li>
+                        <li class="mb-3"><a href="#chapter6" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 6: Formation of Church Branches</span></a></li>
+                        <li class="mb-3"><a href="#chapter7" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 7: Amendments</span></a></li>
+                        <li class="mb-3"><a href="#chapter8" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 8: Dissolution</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <section id="chapter1">
-        <h2 class="chapter-title">CHAPTER 1: Preamble</h2>
-        <div class="subsection">
+    <section id="chapter1" class="constitution-chapter mb-5">
+        <div class="chapter-header mb-4">
+            <div class="d-flex align-items-center">
+                <div class="chapter-number me-3">1</div>
+                <div>
+                    <h2 class="chapter-title mb-1">Preamble</h2>
+                    <p class="text-muted mb-0">Our Foundation and Purpose</p>
+                </div>
+            </div>
+        </div>
+        <div class="subsection card border-0 shadow-sm p-4" style="border-radius: 12px;">
             <p class="numbered">1.1 Definition of a Local Church</p>
             <p>A local church is an Assembly of God’s people who have joined themselves together in full purpose of heart under Christ, submitting themselves unquestionably to Him in His Word.</p>
             <p class="numbered">1.2 Purpose of a Local Church</p>

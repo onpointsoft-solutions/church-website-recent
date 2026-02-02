@@ -1,0 +1,48 @@
+# Android/Gradle
+android_app/.gradle/
+android_app/build/
+android_app/app/build/
+android_app/local.properties
+android_app/.idea/
+android_app/*.iml
+android_app/.DS_Store
+
+# Gradle daemon and lock files
+*.lock
+.gradle/
+build/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+admin/logs/
+
+# Environment files
+.env
+.env.local
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# PHP
+vendor/
+composer.lock
+
+# Uploads (optional - uncomment if you don't want to track uploads)
+# uploads/
+
+# Cache
+cache/
+*.cache
