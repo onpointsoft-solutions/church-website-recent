@@ -958,4 +958,95 @@ include dirname(__DIR__) . '/includes/header.php';
 </main>
 <!-- End Main Content -->
 
+<!-- Load Sermons and Events -->
+<script>
+// Load sermons dynamically
+fetch('/sermons_api_enhanced.php')
+  .then(res => res.json())
+  .then(data => {
+    if (data.success && data.sermons && Array.isArray(data.sermons)) {
+      const container = document.getElementById('sermons-list');
+      if (!container) return;
+      
+      // Show only the latest 3 sermons
+      const latestSermons = data.sermons.slice(0, 3);
+      
+      if (latestSermons.length === 0) {
+        container.innerHTML = '<div class="col-12"><p class="text-center text-muted">No sermons available yet. Check back soon!</p></div>';
+        return;
+      }
+      
+      container.innerHTML = latestSermons.map(sermon => `
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="sermon-card h-100">
+            <div class="sermon-thumbnail">
+              <img src="${sermon.thumbnail || 'assets/images/default-sermon.jpg'}" alt="${sermon.title}" class="sermon-thumb">
+              ${sermon.youtube ? `<a href="${sermon.youtube}" class="youtube-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>` : ''}
+            </div>
+            <div class="sermon-content">
+              <h5 class="mt-3 mb-2">${sermon.title}</h5>
+              <div class="sermon-meta mb-2">
+                <span><i class="fas fa-calendar-alt me-1"></i> ${new Date(sermon.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</span><br>
+                <span><i class="fas fa-user me-1"></i> ${sermon.speaker}</span>
+              </div>
+              <p class="sermon-description">${sermon.description ? sermon.description.substring(0, 100) + (sermon.description.length > 100 ? '...' : '') : ''}</p>
+              ${sermon.file_url ? `<a href="${sermon.file_url}" class="btn btn-sm btn-outline-primary mt-2" target="_blank"><i class="fas fa-play"></i> Watch</a>` : ''}
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+  })
+  .catch(err => {
+    console.error('Error loading sermons:', err);
+    const container = document.getElementById('sermons-list');
+    if (container) container.innerHTML = '<div class="col-12"><p class="text-center text-muted">Unable to load sermons at this time.</p></div>';
+  });
+
+// Load events dynamically
+fetch('/admin/events_api.php')
+  .then(res => res.json())
+  .then(data => {
+    if (data.events && Array.isArray(data.events)) {
+      const container = document.getElementById('events-list');
+      if (!container) return;
+      
+      // Show only upcoming events (limit to 3)
+      const upcomingEvents = data.events.filter(event => new Date(event.event_date) >= new Date()).slice(0, 3);
+      
+      if (upcomingEvents.length === 0) {
+        container.innerHTML = '<div class="col-12"><p class="text-center text-muted">No upcoming events at this time. Check back soon!</p></div>';
+        return;
+      }
+      
+      container.innerHTML = upcomingEvents.map(event => `
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="event-card h-100">
+            <div class="event-banner" style="background-image:url('${event.banner || 'assets/images/default-event.jpg'}')">
+              <div class="event-date">
+                <span class="event-day">${new Date(event.event_date).getDate()}</span>
+                <span class="event-month">${new Date(event.event_date).toLocaleString('default', { month: 'short' })}</span>
+              </div>
+            </div>
+            <div class="event-content">
+              <h5 class="mt-3 mb-2">${event.title}</h5>
+              <div class="event-meta mb-2">
+                <div><i class="fas fa-calendar-alt me-1"></i> ${new Date(event.event_date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</div>
+                ${event.event_time ? `<div><i class="fas fa-clock me-1"></i> ${event.event_time}</div>` : ''}
+                ${event.location ? `<div><i class="fas fa-map-marker-alt me-1"></i> ${event.location}</div>` : ''}
+              </div>
+              <p class="event-description">${event.description ? event.description.substring(0, 100) + (event.description.length > 100 ? '...' : '') : ''}</p>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+  })
+  .catch(err => {
+    console.error('Error loading events:', err);
+    const container = document.getElementById('events-list');
+    if (container) container.innerHTML = '<div class="col-12"><p class="text-center text-muted">Unable to load events at this time.</p></div>';
+  });
+</script>
+
 <?php include dirname(__DIR__) . '/includes/footer.php'; ?>

@@ -114,4 +114,43 @@ interface ApiService {
         @Field("message") message: String,
         @Field("csrf_token") csrfToken: String
     ): Response<BaseResponse>
+    
+    // Gallery Management
+    @GET("gallery_api.php")
+    suspend fun getGalleryImages(
+        @Query("category") category: String? = null,
+        @Query("limit") limit: Int = 50,
+        @Query("offset") offset: Int = 0
+    ): Response<GalleryResponse>
+    
+    @GET("gallery_api.php")
+    suspend fun getGalleryImageDetail(
+        @Query("id") id: Int
+    ): Response<GalleryResponse>
+    
+    @Multipart
+    @POST("gallery_api.php")
+    suspend fun uploadGalleryImage(
+        @Part("action") action: RequestBody,
+        @Part("title") title: RequestBody,
+        @Part("description") description: RequestBody,
+        @Part("category") category: RequestBody,
+        @Part("is_featured") isFeatured: RequestBody,
+        @Part("uploaded_by") uploadedBy: RequestBody,
+        @Part("csrf_token") csrfToken: RequestBody,
+        @Part image: MultipartBody.Part
+    ): Response<GalleryUploadResponse>
+    
+    @POST("gallery_api.php")
+    @FormUrlEncoded
+    suspend fun deleteGalleryImage(
+        @Field("action") action: String = "delete",
+        @Field("id") id: Int,
+        @Field("csrf_token") csrfToken: String
+    ): Response<BaseResponse>
+    
+    @GET("gallery_api.php")
+    suspend fun getGalleryCategories(
+        @Query("action") action: String = "categories"
+    ): Response<BaseResponse>
 }
