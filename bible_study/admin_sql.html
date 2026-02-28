@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin SQL - CEFC Bible Study</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 50px auto; 
+            padding: 20px; 
+            background: #f8fafc;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #8b5cf6;
+        }
+        .sql-box {
+            background: #1f2937;
+            color: #f3f4f6;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            margin: 20px 0;
+            border: 2px solid #8b5cf6;
+        }
+        .step {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #8b5cf6;
+        }
+        .warning {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .success {
+            background: #d1fae5;
+            border: 1px solid #10b981;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .btn {
+            background: #8b5cf6;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #7c3aed;
+        }
+        .copy-btn {
+            background: #10b981;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        .copy-btn:hover {
+            background: #059669;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗄️ Admin User Creation via SQL</h1>
+            <p>CEFC Bible Study Management System</p>
+        </div>
+
+        <div class="warning">
+            <h3>⚠️ PHP Database Extensions Issue</h3>
+            <p>Your XAMPP PHP installation cannot connect to MySQL. This page provides the exact SQL to run manually.</p>
+        </div>
+
+        <div class="success">
+            <h3>✅ Solution: Manual SQL Insert</h3>
+            <p>Copy the SQL below and run it in phpMyAdmin:</p>
+        </div>
+
+        <div class="step">
+            <h3>Step 1: Open phpMyAdmin</h3>
+            <p>Go to: <a href="http://localhost/phpmyadmin" target="_blank" style="color: #8b5cf6;">http://localhost/phpmyadmin</a></p>
+        </div>
+
+        <div class="step">
+            <h3>Step 2: Select Database</h3>
+            <p>Click on <strong>bs_cefc</strong> database from the left sidebar</p>
+        </div>
+
+        <div class="step">
+            <h3>Step 3: Run SQL Query</h3>
+            <p>Click on the "SQL" tab and paste the query below:</p>
+            
+            <div class="sql-box" id="sqlQuery">
+INSERT INTO bs_users (name, email, password, role, status, verified, created_at) 
+VALUES ('Test Admin', 'testadmin@gmail.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin', 'active', 1, NOW());
+            </div>
+            
+            <button class="copy-btn" onclick="copySQL()">📋 Copy SQL</button>
+        </div>
+
+        <div class="step">
+            <h3>Step 4: Verify Admin User</h3>
+            <p>After running the query, you should see "1 row inserted" message.</p>
+        </div>
+
+        <div class="step">
+            <h3>👤 Admin Credentials</h3>
+            <p><strong>Email:</strong> testadmin@gmail.com</p>
+            <p><strong>Password:</strong> Admin@321</p>
+            <p><strong>Role:</strong> Administrator</p>
+            <p><strong>Password Hash:</strong> $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi</p>
+        </div>
+
+        <div class="success">
+            <h3>✅ After Creating Admin User</h3>
+            <p>You can then login at:</p>
+            <a href="auth/login.php" class="btn">🔐 Login Page</a>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.php" class="btn">🏠 Main Website</a>
+        </div>
+    </div>
+
+    <script>
+        function copySQL() {
+            const sqlText = document.getElementById('sqlQuery').textContent;
+            navigator.clipboard.writeText(sqlText).then(function() {
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = '✅ Copied!';
+                btn.style.background = '#059669';
+                
+                setTimeout(function() {
+                    btn.textContent = originalText;
+                    btn.style.background = '#10b981';
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Failed to copy: ', err);
+                alert('Please copy the SQL manually');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin User Setup - CEFC Bible Study</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 50px auto; 
+            padding: 20px; 
+            background: #f8fafc;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #8b5cf6;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            border-left: 4px solid #8b5cf6;
+            background: #f8fafc;
+        }
+        .code {
+            background: #1f2937;
+            color: #f3f4f6;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        .warning {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .success {
+            background: #d1fae5;
+            border: 1px solid #10b981;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .btn {
+            background: #8b5cf6;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #7c3aed;
+        }
+        .step {
+            background: white;
+            border: 1px solid #e5e7eb;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .step-number {
+            background: #8b5cf6;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔧 Admin User Setup</h1>
+            <p>CEFC Bible Study Management System</p>
+        </div>
+
+        <div class="warning">
+            <h3>⚠️ PHP Configuration Issue Detected</h3>
+            <p>Your XAMPP PHP installation is missing required extensions. This page provides alternative methods to create your admin user.</p>
+        </div>
+
+        <div class="section">
+            <h2>👤 Admin User Credentials</h2>
+            <div class="step">
+                <span class="step-number">1</span>
+                <strong>Email:</strong> testadmin@gmail.com
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <strong>Password:</strong> Admin@321
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <strong>Role:</strong> Administrator
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔧 Method 1: Manual Database Insert (Recommended)</h2>
+            <p>Use phpMyAdmin to run this SQL query directly:</p>
+            <div class="code">
+INSERT INTO bs_users (name, email, password, role, status, verified, created_at) 
+VALUES ('Test Admin', 'testadmin@gmail.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin', 'active', 1, NOW());
+            </div>
+            <p><strong>Steps:</strong></p>
+            <ol>
+                <li>Open phpMyAdmin (usually http://localhost/phpmyadmin)</li>
+                <li>Select the <code>bs_cefc</code> database</li>
+                <li>Click on "SQL" tab</li>
+                <li>Paste the query above and click "Go"</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>🔧 Method 2: Fix XAMPP PHP Extensions</h2>
+            <p>Enable required PHP extensions:</p>
+            <ol>
+                <li>Open XAMPP Control Panel</li>
+                <li>Click "Config" next to Apache</li>
+                <li>Select "PHP (php.ini)"</li>
+                <li>Find and uncomment these lines (remove semicolon):</li>
+            </ol>
+            <div class="code">
+extension=mysqli
+extension=pdo_mysql  
+extension=curl
+extension=openssl
+extension=mbstring
+            </div>
+            <ol start="5">
+                <li>Save the file and restart Apache</li>
+                <li>Try accessing insert_admin.php again</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>🔧 Method 3: Create Simple PHP File</h2>
+            <p>Create a minimal PHP file that bypasses database dependencies:</p>
+            <div class="code">
+&lt;?php
+// Simple admin creation
+try {
+    $pdo = new PDO("mysql:host=localhost;dbname=bs_cefc", "root", "");
+    $hash = password_hash("Admin@321", PASSWORD_DEFAULT);
+    $pdo->exec("INSERT INTO bs_users (name, email, password, role, status, verified, created_at) 
+                 VALUES ('Test Admin', 'testadmin@gmail.com', '$hash', 'admin', 'active', 1, NOW())");
+    echo "Admin user created successfully!";
+} catch (Exception $e) {
+    echo "Error: " . $e->getMessage();
+}
+?&gt;
+            </div>
+        </div>
+
+        <div class="success">
+            <h3>✅ After Creating Admin User</h3>
+            <p>Once the admin user is created, you can:</p>
+            <ul>
+                <li>Login at: <a href="auth/login.php">auth/login.php</a></li>
+                <li>Access admin dashboard</li>
+                <li>Manage users, groups, semesters</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="../index.php" class="btn">🏠 Main Website</a>
+            <a href="auth/login.php" class="btn">🔐 Login Page</a>
+        </div>
+    </div>
+</body>
+</html>

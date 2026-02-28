@@ -31,6 +31,11 @@
     Require all denied
 </FilesMatch>
 
+# Protect admin logs directory
+<Directory "admin/logs">
+    Require all denied
+</Directory>
+
 # Protect configuration files
 <Files "config.php">
     Require all denied
@@ -49,9 +54,11 @@
 Options -Indexes
 
 # Prevent access to PHP files in uploads directory
-<Files "uploads/*.php">
-    Require all denied
-</Files>
+<Directory "uploads">
+    <Files "*.php">
+        Require all denied
+    </Files>
+</Directory>
 
 # Enable compression for better performance
 <IfModule mod_deflate.c>
