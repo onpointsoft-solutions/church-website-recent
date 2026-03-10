@@ -1580,14 +1580,7 @@ strong {
         gap: 1rem;
     }
     
-    .hero-stats .stat-number {
-        font-size: 1.8rem;
-    }
-    
-    .hero-stats .stat-label {
-        font-size: 0.85rem;
-    }
-    
+        
     .service-card, .feature-item {
         margin-bottom: 1rem;
     }

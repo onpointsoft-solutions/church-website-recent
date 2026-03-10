@@ -32,7 +32,7 @@ include dirname(__DIR__) . '/../includes/header.php';
                     </nav>
                 </div>
                 <div class="mt-3">
-                    <a href="/bible-study/auth/login.php" class="btn btn-outline-light btn-lg">
+                    <a href="/bible-study.php/auth/login.php" class="btn btn-outline-light btn-lg">
                         <i class="fas fa-sign-in-alt me-2"></i>
                         Member Login
                     </a>
@@ -164,7 +164,7 @@ include dirname(__DIR__) . '/../includes/header.php';
                         <i class="fas fa-praying-hands me-2"></i>
                         Join Bible Study
                     </a>
-                    <a href="/bible-study/auth/login.php" class="btn btn-outline-primary btn-lg">
+                    <a href="/bible-study.php/auth/login.php" class="btn btn-outline-primary btn-lg">
                         <i class="fas fa-sign-in-alt me-2"></i>
                         Member Login
                     </a>

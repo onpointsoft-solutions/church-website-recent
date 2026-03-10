@@ -143,7 +143,7 @@ $breadcrumbData = getBreadcrumbStructuredData($currentPath);
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/bible-study">Bible Study</a>
+                        <a class="nav-link" href="/bible-study.php">Bible Study</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/index#contact">Contact</a>

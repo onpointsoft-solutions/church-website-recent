@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         heroContent.forEach((content, index) => {
             // Stagger animation for hero elements
-            const elements = content.querySelectorAll('h1, p, .btn, .hero-stats, .hero-features');
+            const elements = content.querySelectorAll('h1, p, .btn, .hero-features');
             elements.forEach((element, i) => {
                 element.style.opacity = '0';
                 element.style.transform = 'translateY(30px)';
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (content) {
                 // Reset animations
-                const elements = content.querySelectorAll('h1, p, .btn, .hero-stats, .hero-features');
+                const elements = content.querySelectorAll('h1, p, .btn, .hero-features');
                 elements.forEach(element => {
                     element.style.opacity = '0';
                     element.style.transform = 'translateY(30px)';
@@ -335,7 +335,6 @@ document.addEventListener('DOMContentLoaded', function() {
             51%, 100% { border-color: currentColor; }
         }
         
-        .hero-stats .stat-item,
         .hero-features .feature-item {
             transition: all 0.6s ease;
         }
