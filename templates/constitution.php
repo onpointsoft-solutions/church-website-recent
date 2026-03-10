@@ -14,9 +14,9 @@ include dirname(__DIR__) . '/includes/header.php';
                 <h1 class="display-3 fw-bold mb-3" style="text-shadow: 0 4px 20px rgba(0,0,0,0.5); font-family: 'Playfair Display', serif;">Church Constitution</h1>
                 <p class="lead mb-4" style="font-size: 1.3rem; text-shadow: 0 2px 10px rgba(0,0,0,0.4);">Our Foundation, Faith & Governance</p>
                 <div class="d-flex justify-content-center gap-3 flex-wrap">
-                    <span class="badge bg-light text-dark px-3 py-2"><i class="fas fa-cross me-2"></i>Biblical Foundation</span>
-                    <span class="badge bg-light text-dark px-3 py-2"><i class="fas fa-users me-2"></i>Church Governance</span>
-                    <span class="badge bg-light text-dark px-3 py-2"><i class="fas fa-heart me-2"></i>Our Values</span>
+                    <span class="badge bg-light px-3 py-2" style="color: var(--primary-purple);"><i class="fas fa-cross me-2"></i>Biblical Foundation</span>
+                    <span class="badge bg-light px-3 py-2" style="color: var(--primary-purple);"><i class="fas fa-users me-2"></i>Church Governance</span>
+                    <span class="badge bg-light px-3 py-2" style="color: var(--primary-purple);"><i class="fas fa-heart me-2"></i>Our Values</span>
                 </div>
             </div>
         </div>
@@ -32,18 +32,18 @@ include dirname(__DIR__) . '/includes/header.php';
             <div class="row">
                 <div class="col-md-6">
                     <ul class="list-unstyled constitution-toc">
-                        <li class="mb-3"><a href="#chapter1" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 1: Preamble</span></a></li>
-                        <li class="mb-3"><a href="#chapter2" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 2: The Church</span></a></li>
-                        <li class="mb-3"><a href="#chapter3" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 3: Leadership</span></a></li>
-                        <li class="mb-3"><a href="#chapter4" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 4: Government</span></a></li>
+                        <li class="mb-3"><a href="#chapter1" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right me-2" style="color: var(--primary-purple);"></i><span>CHAPTER 1: Preamble</span></a></li>
+                        <li class="mb-3"><a href="#chapter2" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right me-2" style="color: var(--primary-purple);"></i><span>CHAPTER 2: The Church</span></a></li>
+                        <li class="mb-3"><a href="#chapter3" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right me-2" style="color: var(--primary-purple);"></i><span>CHAPTER 3: Leadership</span></a></li>
+                        <li class="mb-3"><a href="#chapter4" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right me-2" style="color: var(--primary-purple);"></i><span>CHAPTER 4: Government</span></a></li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <ul class="list-unstyled constitution-toc">
-                        <li class="mb-3"><a href="#chapter5" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 5: Church Meetings</span></a></li>
-                        <li class="mb-3"><a href="#chapter6" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 6: Formation of Church Branches</span></a></li>
-                        <li class="mb-3"><a href="#chapter7" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 7: Amendments</span></a></li>
-                        <li class="mb-3"><a href="#chapter8" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right text-primary me-2"></i><span>CHAPTER 8: Dissolution</span></a></li>
+                        <li class="mb-3"><a href="#chapter5" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right me-2" style="color: var(--primary-purple);"></i><span>CHAPTER 5: Church Meetings</span></a></li>
+                        <li class="mb-3"><a href="#chapter6" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right me-2" style="color: var(--primary-purple);"></i><span>CHAPTER 6: Formation of Church Branches</span></a></li>
+                        <li class="mb-3"><a href="#chapter7" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right me-2" style="color: var(--primary-purple);"></i><span>CHAPTER 7: Amendments</span></a></li>
+                        <li class="mb-3"><a href="#chapter8" class="text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right me-2" style="color: var(--primary-purple);"></i><span>CHAPTER 8: Dissolution</span></a></li>
                     </ul>
                 </div>
             </div>

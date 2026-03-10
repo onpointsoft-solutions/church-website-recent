@@ -260,7 +260,7 @@ include dirname(__DIR__) . '/includes/header.php';
                                     <i class="fas fa-heart value-icon"></i>
                                     <span>Godly marriages and Families</span>
                                 </div>
-                                <a href="#ministries" class="btn btn-outline-light mt-3 learn-more-btn">Learn More</a>
+                                <a href="#ministries" class="btn btn-outline-primary mt-3 learn-more-btn">Learn More</a>
 </div>
                         </div>
                         <div class="values-card">
