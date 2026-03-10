@@ -45,29 +45,7 @@ include dirname(__DIR__) . '/includes/header.php';
                                     <h1 class="hero-title">Christ Ekklesia Fellowship Chapel</h1>
                                     <p class="hero-subtitle">Where Christ Takes the Preeminence of Our Worship</p>
                                     <p class="lead mb-4">Join us in celebrating the supremacy of Christ in all things. Experience authentic worship, biblical teaching, and fellowship rooted in God's love in Kabarak, Nakuru.</p>
-                                    <div class="hero-stats mb-4">
-                                        <div class="row text-center">
-                                            <div class="col-4">
-                                                <div class="stat-item">
-                                                    <h3 class="stat-number">200+</h3>
-                                                    <p class="stat-label">Members</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="stat-item">
-                                                    <h3 class="stat-number">6+</h3>
-                                                    <p class="stat-label">Years</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="stat-item">
-                                                    <h3 class="stat-number">8+</h3>
-                                                    <p class="stat-label">Ministries</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-wrap gap-3">
+                                                                        <div class="d-flex flex-wrap gap-3">
                                         <a href="#services" class="btn btn-primary btn-lg">Join Our Worship</a>
                                         <a href="#about" class="btn btn-outline-light btn-lg">Learn More</a>
                                     </div>

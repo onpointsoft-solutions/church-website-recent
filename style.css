@@ -556,18 +556,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: auto;
 }
 
-/* Ensure 'Learn More' buttons are visible on white card background */
-.ministry-card .btn.btn-outline-light {
-    color: var(--primary-purple);
-    border-color: var(--primary-purple);
-}
-
-.ministry-card .btn.btn-outline-light:hover,
-.ministry-card .btn.btn-outline-light:focus {
-    background-color: var(--primary-purple);
-    color: var(--white);
-    border-color: var(--primary-purple);
-}
 
 .ministry-card-btn {
     background: var(--primary-purple);
@@ -1314,6 +1302,74 @@ strong {
 
 .calendar-year-badge {
     margin-top: 1rem;
+}
+
+/* Event Items Styles */
+.events-list {
+    margin-top: 1rem;
+}
+
+.event-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    background: var(--off-white);
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-gold);
+    transition: all 0.3s ease;
+}
+
+.event-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background: var(--white);
+}
+
+.event-date {
+    min-width: 180px;
+    font-weight: 600;
+    color: var(--primary-purple);
+    padding-right: 1rem;
+    border-right: 2px solid #e5e7eb;
+    margin-right: 1rem;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-details h5 {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+}
+
+.event-details p {
+    margin-bottom: 0.25rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.event-details i {
+    color: var(--accent-gold);
+    width: 12px;
+}
+
+@media (max-width: 768px) {
+    .event-item {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .event-date {
+        min-width: auto;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 2px solid #e5e7eb;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
 }
 
 /* ==========================

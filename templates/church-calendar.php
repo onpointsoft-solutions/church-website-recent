@@ -6,9 +6,9 @@
  */
 
 // SEO Configuration
-$pageTitle = "2025 Ministry Calendar - Christ Ekklesia Fellowship Chapel | Year of Eternal Legislation";
-$pageDescription = "Discover our 2025 Ministry Calendar at Christ Ekklesia Fellowship Chapel. Join us for worship services, youth outings, evangelism crusades, and community outreach in Kabarak, Nakuru.";
-$pageKeywords = "church calendar 2025, ministry events, worship services, youth ministry, evangelism, community outreach, Christ Ekklesia events, Kabarak church calendar";
+$pageTitle = "Events of the Year - Christ Ekklesia Fellowship Chapel | Year of Divine Encounters";
+$pageDescription = "Discover our Events of the Year at Christ Ekklesia Fellowship Chapel. Join us for youth services, church cleaning days, outings, and special encounters in our Year of Divine Encounters.";
+$pageKeywords = "church events, divine encounters, youth service, church calendar, ministry events, worship services, youth ministry, evangelism, community outreach, Christ Ekklesia events, Kabarak church calendar";
 $pageType = "article";
 $pageImage = "/assets/images/calendar-hero.jpg";
 
@@ -26,8 +26,8 @@ include dirname(__DIR__) . '/includes/header.php';
     <section class="hero-section position-relative mb-5" style="background: linear-gradient(rgba(96, 55, 158, 0.8), rgba(142, 68, 173, 0.8)), url('/assets/images/calendar-hero.jpg') center/cover no-repeat; min-height: 400px; display: flex; align-items: center; justify-content: center;">
         <div class="container text-center text-white py-5">
             <div class="hero-content animate-fade-in">
-                <h1 class="display-4 fw-bold mb-3" style="text-shadow: 0 4px 20px rgba(0,0,0,0.3);">2025 Ministry Calendar</h1>
-                <p class="lead mb-4">Our Year of Eternal Legislation</p>
+                <h1 class="display-4 fw-bold mb-3" style="text-shadow: 0 4px 20px rgba(0,0,0,0.3);">Events of the Year</h1>
+                <p class="lead mb-4">Our Year of Divine Encounters</p>
                 <div class="hero-breadcrumb">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center bg-transparent">
@@ -37,7 +37,7 @@ include dirname(__DIR__) . '/includes/header.php';
                     </nav>
                 </div>
                 <div class="calendar-year-badge">
-                    <span class="badge bg-light text-primary fs-6 px-4 py-2">Year 2025</span>
+                    <span class="badge bg-light text-primary fs-6 px-4 py-2">Year of Divine Encounters</span>
                 </div>
             </div>
         </div>
@@ -51,87 +51,209 @@ include dirname(__DIR__) . '/includes/header.php';
                         <i class="fas fa-calendar-check" style="font-size: 4rem; color: var(--accent-gold);"></i>
                     </div>
                     <div class="col-md-10">
-                        <h2 class="mb-2" style="font-family: 'Playfair Display', serif; color: var(--primary-purple);">Year of Eternal Legislation</h2>
-                        <p class="mb-0 text-muted">This calendar reflects the resolutions of the leadership meeting held on <b>January 25, 2025</b> at Lake Bogoria Spa, Kabarak. Join us as we walk through God's ordained seasons for our church family.</p>
+                        <h2 class="mb-2" style="font-family: 'Playfair Display', serif; color: var(--primary-purple);">Year of Divine Encounters</h2>
+                        <p class="mb-0 text-muted">Join us throughout the year for special encounters with the divine through worship, fellowship, and service. Experience God's presence in every season.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="calendar-section calendar-quarter animate-fade-in">
-            <div class="row align-items-center mb-3">
-                <div class="col-md-4">
-                    <img src="../assets/images/worship-team.jpg" alt="Quarter 1 Worship" class="rounded shadow" style="width:100%; height:auto; object-fit:cover;">
-                </div>
-                <div class="col-md-8">
-                    <div class="d-flex align-items-center mb-3">
-                        <span class="badge bg-primary me-2" style="font-size: 1.2rem; padding: 0.5rem 1rem;">Q1</span>
-                        <h3 class="mb-0"><span class="icon">&#128736;</span> JANUARY - MARCH 2025</h3>
+        <!-- Events Calendar Section -->
+        <div class="events-calendar">
+            
+            <!-- FEBRUARY -->
+            <div class="calendar-section calendar-quarter animate-fade-in">
+                <div class="row align-items-center mb-3">
+                    <div class="col-md-4">
+                        <img src="../assets/images/youths.jpg" alt="February Events" class="rounded shadow" style="width:100%; height:auto; object-fit:cover;">
                     </div>
-                    <p class="text-muted">Foundation Quarter - Building for the Future</p>
+                    <div class="col-md-8">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-danger me-2" style="font-size: 1.2rem; padding: 0.5rem 1rem;">FEB</span>
+                            <h3 class="mb-0"><span class="icon">❄️</span> FEBRUARY</h3>
+                        </div>
+                        <p class="text-muted">Youth Engagement & Service</p>
+                    </div>
+                </div>
+                <div class="events-list">
+                    <div class="event-item">
+                        <div class="event-date"><strong>15th Feb (Sun)</strong></div>
+                        <div class="event-details">
+                            <h5>Youth Service</h5>
+                            <p class="mb-0">Special youth-led worship service</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date"><strong>21st Feb (Sat)</strong></div>
+                        <div class="event-details">
+                            <h5>Church Cleaning Day</h5>
+                            <p class="mb-0"><i class="fas fa-clock me-1"></i>9:00 AM – 12:00 PM</p>
+                            <p class="mb-0">Community service to prepare our worship space</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <ul>
-                <li><b>Primary Focus:</b> Church Construction Completion: Finalizing flooring (KSh 158,000), toilets (KSh 50,000), roofing (KSh 60,000), walling, and media center to ensure all-weather functionality.</li>
-            </ul>
-        </div>
-        <div class="calendar-section calendar-quarter animate-fade-in">
-            <div class="row align-items-center mb-3">
-                <div class="col-md-4">
-                    <img src="../assets/images/children.jpg" alt="Quarter 2 Children" class="rounded shadow" style="width:100%; height:auto; object-fit:cover;">
-                </div>
-                <div class="col-md-8">
-                    <div class="d-flex align-items-center mb-3">
-                        <span class="badge bg-success me-2" style="font-size: 1.2rem; padding: 0.5rem 1rem;">Q2</span>
-                        <h3 class="mb-0"><span class="icon">&#10013;&#65039;</span> APRIL - JUNE 2025</h3>
+
+            <!-- MARCH -->
+            <div class="calendar-section calendar-quarter animate-fade-in">
+                <div class="row align-items-center mb-3">
+                    <div class="col-md-4">
+                        <img src="../assets/images/youths.jpg" alt="March Events" class="rounded shadow" style="width:100%; height:auto; object-fit:cover;">
                     </div>
-                    <p class="text-muted">Fellowship Quarter - Building Community</p>
+                    <div class="col-md-8">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-success me-2" style="font-size: 1.2rem; padding: 0.5rem 1rem;">MAR</span>
+                            <h3 class="mb-0"><span class="icon">🌱</span> MARCH</h3>
+                        </div>
+                        <p class="text-muted">Youth Outings & Fellowships</p>
+                    </div>
+                </div>
+                <div class="events-list">
+                    <div class="event-item">
+                        <div class="event-date"><strong>14th Mar (Sat)</strong></div>
+                        <div class="event-details">
+                            <h5>Youth Outing</h5>
+                            <p class="mb-0"><i class="fas fa-money-bill-wave me-1"></i>Contribution: KSh 900–1,300 per person</p>
+                            <p class="mb-0"><i class="fas fa-map-marker-alt me-1"></i>Venue: To be confirmed</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date"><strong>21st Mar (Sat)</strong></div>
+                        <div class="event-details">
+                            <h5>Joint Fellowships</h5>
+                            <p class="mb-0">Unity gathering with fellow ministries</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <ul>
-                <li><b>Youth Service:</b> Men-led ministry event</li>
-                <li><b>Sunday School Outing:</b> Children's fellowship (preceding Youth Outing)</li>
-                <li><b>Youth Outing:</b> Dedicated youth retreat/fellowship</li>
-                <li><b>Mercy Visits:</b> Community outreach to vulnerable groups</li>
-            </ul>
-        </div>
-        <div class="calendar-section calendar-quarter animate-fade-in">
-            <div class="row align-items-center mb-3">
-                <div class="col-md-4">
-                    <img src="../assets/images/prayer.jpg" alt="Quarter 3 Prayer" class="rounded shadow" style="width:100%; height:auto; object-fit:cover;">
-                </div>
-                <div class="col-md-8">
-                    <div class="d-flex align-items-center mb-3">
-                        <span class="badge bg-warning me-2" style="font-size: 1.2rem; padding: 0.5rem 1rem;">Q3</span>
-                        <h3 class="mb-0"><span class="icon">&#128591;</span> JULY - SEPTEMBER 2025</h3>
+
+            <!-- APRIL -->
+            <div class="calendar-section calendar-quarter animate-fade-in">
+                <div class="row align-items-center mb-3">
+                    <div class="col-md-4">
+                        <img src="../assets/images/outreach.jpg" alt="April Events" class="rounded shadow" style="width:100%; height:auto; object-fit:cover;">
                     </div>
-                    <p class="text-muted">Harvest Quarter - Reaching the Lost</p>
+                    <div class="col-md-8">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-warning me-2" style="font-size: 1.2rem; padding: 0.5rem 1rem;">APR</span>
+                            <h3 class="mb-0"><span class="icon">🌸</span> APRIL</h3>
+                        </div>
+                        <p class="text-muted">Evangelism & Services</p>
+                    </div>
+                </div>
+                <div class="events-list">
+                    <div class="event-item">
+                        <div class="event-date"><strong>To be announced</strong></div>
+                        <div class="event-details">
+                            <h5>Evangelism</h5>
+                            <p class="mb-0">Community outreach and soul-winning</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date"><strong>To be confirmed</strong></div>
+                        <div class="event-details">
+                            <h5>Men's Service</h5>
+                            <p class="mb-0">Men's ministry special service</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date"><strong>To be announced</strong></div>
+                        <div class="event-details">
+                            <h5>Constitution Meeting</h5>
+                            <p class="mb-0">Leadership and governance session</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <ul>
-                <li><b>Evangelism Crusade:</b> Community soul-winning campaign</li>
-                <li><b>Worship Service:</b> Special gatherings for corporate praise</li>
-                <li><b>Discipleship Intensive:</b> Leadership and member training</li>
-                <li><b>Ladies Service:</b> Women's ministry fellowship</li>
-            </ul>
-        </div>
-        <div class="calendar-section calendar-quarter animate-fade-in">
-            <div class="row align-items-center mb-3">
-                <div class="col-md-4">
-                    <img src="../assets/images/outdoor.jpg" alt="Quarter 4 Outdoor" class="rounded shadow" style="width:100%; height:auto; object-fit:cover;">
-                </div>
-                <div class="col-md-8">
-                    <div class="d-flex align-items-center mb-3">
-                        <span class="badge bg-danger me-2" style="font-size: 1.2rem; padding: 0.5rem 1rem;">Q4</span>
-                        <h3 class="mb-0"><span class="icon">&#127881;</span> OCTOBER - DECEMBER 2025</h3>
+
+            <!-- JULY -->
+            <div class="calendar-section calendar-quarter animate-fade-in">
+                <div class="row align-items-center mb-3">
+                    <div class="col-md-4">
+                        <img src="../assets/images/women.jpg" alt="July Events" class="rounded shadow" style="width:100%; height:auto; object-fit:cover;">
                     </div>
-                    <p class="text-muted">Celebration Quarter - Gratitude & Reflection</p>
+                    <div class="col-md-8">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-info me-2" style="font-size: 1.2rem; padding: 0.5rem 1rem;">JUL</span>
+                            <h3 class="mb-0"><span class="icon">☀️</span> JULY</h3>
+                        </div>
+                        <p class="text-muted">Women's Ministry</p>
+                    </div>
+                </div>
+                <div class="events-list">
+                    <div class="event-item">
+                        <div class="event-date"><strong>To be confirmed</strong></div>
+                        <div class="event-details">
+                            <h5>Ladies Service</h5>
+                            <p class="mb-0">Women's ministry special gathering</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <ul>
-                <li><b>Thanksgiving Service:</b> Gratitude celebration for God's faithfulness</li>
-                <li><b>Baptism Ceremony:</b> Public declaration of faith</li>
-                <li><b>Kingdom Works Appreciation:</b> Honoring volunteers and servants</li>
-            </ul>
+
+            <!-- AUGUST -->
+            <div class="calendar-section calendar-quarter animate-fade-in">
+                <div class="row align-items-center mb-3">
+                    <div class="col-md-4">
+                        <img src="../assets/images/sunday-school.jpg" alt="August Events" class="rounded shadow" style="width:100%; height:auto; object-fit:cover;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-primary me-2" style="font-size: 1.2rem; padding: 0.5rem 1rem;">AUG</span>
+                            <h3 class="mb-0"><span class="icon">🎒</span> AUGUST</h3>
+                        </div>
+                        <p class="text-muted">Children & Youth Ministry</p>
+                    </div>
+                </div>
+                <div class="events-list">
+                    <div class="event-item">
+                        <div class="event-date"><strong>To be announced</strong></div>
+                        <div class="event-details">
+                            <h5>VBS for Sunday School & Teens</h5>
+                            <p class="mb-0">Vacation Bible School program</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date"><strong>To be announced</strong></div>
+                        <div class="event-details">
+                            <h5>Children's Crusade & Service</h5>
+                            <p class="mb-0">Special children's ministry event</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date"><strong>Saturday following VBS week</strong></div>
+                        <div class="event-details">
+                            <h5>Children's Outing</h5>
+                            <p class="mb-0">Fun fellowship activity for children</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OCTOBER -->
+            <div class="calendar-section calendar-quarter animate-fade-in">
+                <div class="row align-items-center mb-3">
+                    <div class="col-md-4">
+                        <img src="../assets/images/outdoor.jpg" alt="October Events" class="rounded shadow" style="width:100%; height:auto; object-fit:cover;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-secondary me-2" style="font-size: 1.2rem; padding: 0.5rem 1rem;">OCT</span>
+                            <h3 class="mb-0"><span class="icon">🍂</span> OCTOBER</h3>
+                        </div>
+                        <p class="text-muted">Divine Encounters</p>
+                    </div>
+                </div>
+                <div class="events-list">
+                    <div class="event-item">
+                        <div class="event-date"><strong>To be announced</strong></div>
+                        <div class="event-details">
+                            <h5>Special Events</h5>
+                            <p class="mb-0">Join us for special encounters with the divine</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div class="admin-notes mb-5 animate-fade-in">
             <div class="d-flex align-items-center mb-3">

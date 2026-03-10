@@ -438,12 +438,12 @@ include dirname(__DIR__) . '/../includes/header.php';
     <!-- Core Values Section -->
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="text-center mb-4" style="color: var(--primary-color);">Our Core Values</h2>
+            <h2 class="text-center mb-4" style="color: var(--primary-purple);">Our Core Values</h2>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="value-card">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-gem text-primary me-3" style="font-size: 1.5rem;"></i>
+                            <i class="fas fa-gem me-3" style="font-size: 1.5rem; color: var(--primary-purple);"></i>
                             <div>
                                 <h5 class="mb-1">Honesty</h5>
                                 <p class="mb-0">Transparency and trust in all interactions.</p>
@@ -452,7 +452,7 @@ include dirname(__DIR__) . '/../includes/header.php';
                     </div>
                     <div class="value-card">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-shield-alt text-primary me-3" style="font-size: 1.5rem;"></i>
+                            <i class="fas fa-shield-alt me-3" style="font-size: 1.5rem; color: var(--primary-purple);"></i>
                             <div>
                                 <h5 class="mb-1">Integrity</h5>
                                 <p class="mb-0">High moral and ethical principles, reflecting Christ.</p>
@@ -461,7 +461,7 @@ include dirname(__DIR__) . '/../includes/header.php';
                     </div>
                     <div class="value-card">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-hourglass-half text-primary me-3" style="font-size: 1.5rem;"></i>
+                            <i class="fas fa-hourglass-half me-3" style="font-size: 1.5rem; color: var(--primary-purple);"></i>
                             <div>
                                 <h5 class="mb-1">Patience</h5>
                                 <p class="mb-0">Calm and understanding, especially in diverse situations.</p>
@@ -470,7 +470,7 @@ include dirname(__DIR__) . '/../includes/header.php';
                     </div>
                     <div class="value-card">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-tasks text-primary me-3" style="font-size: 1.5rem;"></i>
+                            <i class="fas fa-tasks me-3" style="font-size: 1.5rem; color: var(--primary-purple);"></i>
                             <div>
                                 <h5 class="mb-1">Accountability</h5>
                                 <p class="mb-0">Responsible for actions and duties.</p>
@@ -481,7 +481,7 @@ include dirname(__DIR__) . '/../includes/header.php';
                 <div class="col-lg-6">
                     <div class="value-card">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-users text-primary me-3" style="font-size: 1.5rem;"></i>
+                            <i class="fas fa-users me-3" style="font-size: 1.5rem; color: var(--primary-purple);"></i>
                             <div>
                                 <h5 class="mb-1">Teamwork</h5>
                                 <p class="mb-0">Unity and cooperation to serve the congregation.</p>
@@ -490,7 +490,7 @@ include dirname(__DIR__) . '/../includes/header.php';
                     </div>
                     <div class="value-card">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-hands text-primary me-3" style="font-size: 1.5rem;"></i>
+                            <i class="fas fa-hands me-3" style="font-size: 1.5rem; color: var(--primary-purple);"></i>
                             <div>
                                 <h5 class="mb-1">Humility</h5>
                                 <p class="mb-0">Serving with a humble attitude.</p>
@@ -499,7 +499,7 @@ include dirname(__DIR__) . '/../includes/header.php';
                     </div>
                     <div class="value-card">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-heartbeat text-primary me-3" style="font-size: 1.5rem;"></i>
+                            <i class="fas fa-heartbeat me-3" style="font-size: 1.5rem; color: var(--primary-purple);"></i>
                             <div>
                                 <h5 class="mb-1">Compassion</h5>
                                 <p class="mb-0">Care and empathy for all.</p>
@@ -508,7 +508,7 @@ include dirname(__DIR__) . '/../includes/header.php';
                     </div>
                     <div class="value-card">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-cross text-primary me-3" style="font-size: 1.5rem;"></i>
+                            <i class="fas fa-cross me-3" style="font-size: 1.5rem; color: #007bff;"></i>
                             <div>
                                 <h5 class="mb-1">Godliness</h5>
                                 <p class="mb-0">Aligning life with the teachings of Jesus Christ.</p>
@@ -523,38 +523,38 @@ include dirname(__DIR__) . '/../includes/header.php';
     <!-- Qualifications Section -->
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="text-center mb-4" style="color: var(--primary-color);">Characteristics & Qualifications</h2>
+            <h2 class="text-center mb-4" style="color: var(--primary-purple);">Characteristics & Qualifications</h2>
             <div class="qualification-grid">
                 <div class="qualification-item">
-                    <i class="fas fa-comments me-3 text-primary"></i>
+                    <i class="fas fa-comments me-3" style="color: var(--primary-purple);"></i>
                     <span>Good communication skills</span>
                 </div>
                 <div class="qualification-item">
-                    <i class="fas fa-user-check me-3 text-primary"></i>
+                    <i class="fas fa-user-check me-3" style="color: var(--primary-purple);"></i>
                     <span>High level of confidence</span>
                 </div>
                 <div class="qualification-item">
-                    <i class="fas fa-clock me-3 text-primary"></i>
+                    <i class="fas fa-clock me-3" style="color: var(--primary-purple);"></i>
                     <span>Time management skills</span>
                 </div>
                 <div class="qualification-item">
-                    <i class="fas fa-tasks me-3 text-primary"></i>
+                    <i class="fas fa-tasks me-3" style="color: var(--primary-purple);"></i>
                     <span>Multitasking abilities</span>
                 </div>
                 <div class="qualification-item">
-                    <i class="fas fa-praying-hands me-3 text-primary"></i>
+                    <i class="fas fa-praying-hands me-3" style="color: var(--primary-purple);"></i>
                     <span>Patience</span>
                 </div>
                 <div class="qualification-item">
-                    <i class="fas fa-dove me-3 text-primary"></i>
+                    <i class="fas fa-dove me-3" style="color: var(--primary-purple);"></i>
                     <span>Spiritual relationship with the Lord</span>
                 </div>
                 <div class="qualification-item">
-                    <i class="fas fa-calendar-check me-3 text-primary"></i>
+                    <i class="fas fa-calendar-check me-3" style="color: var(--primary-purple);"></i>
                     <span>Regular attendance at meetings</span>
                 </div>
                 <div class="qualification-item">
-                    <i class="fas fa-smile me-3 text-primary"></i>
+                    <i class="fas fa-smile me-3" style="color: var(--primary-purple);"></i>
                     <span>Friendliness and humility</span>
                 </div>
             </div>
@@ -564,7 +564,7 @@ include dirname(__DIR__) . '/../includes/header.php';
     <!-- Duties Timeline -->
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="text-center mb-5" style="color: var(--primary-color);">Usher Duties Overview</h2>
+            <h2 class="text-center mb-5" style="color: var(--primary-purple);">Usher Duties Overview</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
@@ -574,9 +574,9 @@ include dirname(__DIR__) . '/../includes/header.php';
                             Arrival & Departure
                         </div>
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-clock me-2 text-primary"></i>Arrive at least 30 minutes early to pray and prepare</li>
-                            <li><i class="fas fa-user-plus me-2 text-primary"></i>Conduct orientation for first-time ushers</li>
-                            <li><i class="fas fa-calendar-day me-2 text-primary"></i>Arrive earlier for special activities as required</li>
+                            <li><i class="fas fa-clock me-2" style="color: var(--primary-purple);"></i>Arrive at least 30 minutes early to pray and prepare</li>
+                            <li><i class="fas fa-user-plus me-2" style="color: var(--primary-purple);"></i>Conduct orientation for first-time ushers</li>
+                            <li><i class="fas fa-calendar-day me-2" style="color: var(--primary-purple);"></i>Arrive earlier for special activities as required</li>
                         </ul>
                     </div>
                 </div>
@@ -588,9 +588,9 @@ include dirname(__DIR__) . '/../includes/header.php';
                             Greeting
                         </div>
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-smile me-2 text-primary"></i>Greet arrivals warmly and promptly</li>
-                            <li><i class="fas fa-comments me-2 text-primary"></i>Avoid extended conversations that delay movement</li>
-                            <li><i class="fas fa-user-friends me-2 text-primary"></i>Refer special requests to appropriate ushers</li>
+                            <li><i class="fas fa-smile me-2" style="color: var(--primary-purple);"></i>Greet arrivals warmly and promptly</li>
+                            <li><i class="fas fa-comments me-2" style="color: var(--primary-purple);"></i>Avoid extended conversations that delay movement</li>
+                            <li><i class="fas fa-user-friends me-2" style="color: var(--primary-purple);"></i>Refer special requests to appropriate ushers</li>
                         </ul>
                     </div>
                 </div>
@@ -602,9 +602,9 @@ include dirname(__DIR__) . '/../includes/header.php';
                             Seating
                         </div>
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-arrow-right me-2 text-primary"></i>Guide arrivals to seats near the front courteously</li>
-                            <li><i class="fas fa-praying-hands me-2 text-primary"></i>Discourage movement during prayer or worship</li>
-                            <li><i class="fas fa-user-clock me-2 text-primary"></i>Seat late arrivals at the back with minimal disturbance</li>
+                            <li><i class="fas fa-arrow-right me-2" style="color: var(--primary-purple);"></i>Guide arrivals to seats near the front courteously</li>
+                            <li><i class="fas fa-praying-hands me-2" style="color: var(--primary-purple);"></i>Discourage movement during prayer or worship</li>
+                            <li><i class="fas fa-user-clock me-2" style="color: var(--primary-purple);"></i>Seat late arrivals at the back with minimal disturbance</li>
                         </ul>
                     </div>
                 </div>
@@ -615,7 +615,7 @@ include dirname(__DIR__) . '/../includes/header.php';
     <!-- Emergency Procedures -->
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="text-center mb-4" style="color: var(--primary-color);">Emergency & Safety Procedures</h2>
+            <h2 class="text-center mb-4" style="color: var(--primary-purple);">Emergency & Safety Procedures</h2>
             <div class="row">
                 <div class="col-lg-6 mb-4">
                     <div class="emergency-card h-100">
@@ -650,7 +650,7 @@ include dirname(__DIR__) . '/../includes/header.php';
         <div class="row align-items-center">
             <div class="col-lg-8">
                 <h3 class="mb-2">Ready to Serve as an Usher?</h3>
-                <p class="mb-0">Join our ministry and become a spiritual ambassador for Christ Fellowship Chapel</p>
+                <p class="mb-0">Join our ministry and become a spiritual ambassador for Christ Fellowship Chapel. Join our Bible study every Saturday 2:00 PM - 4:00 PM for spiritual growth and fellowship.</p>
             </div>
             <div class="col-lg-4 text-lg-end">
                 <button class="btn btn-custom btn-lg" onclick="window.location.href='/volunteers.php'">
