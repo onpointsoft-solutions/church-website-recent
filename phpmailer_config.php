@@ -2,9 +2,9 @@
 // PHPMailer config for CEFC
 // Fill with your SMTP details
 return [
-    'host' => 'smtp.gmail.com',
-    'username' => 'vincentbettoh@gmail.com',
-    'password' => 'rhmh wqfl zhbu ljqx',
+    'host' => 'mail.christekklesians.org',
+    'username' => 'info@christekklesians.org',
+    'password' => '@Admin@2026',
     'port' => 587,
     'from' => 'info@christekklesians.org',
     'from_name' => 'Christ Ekklesia Fellowship Chapel',
