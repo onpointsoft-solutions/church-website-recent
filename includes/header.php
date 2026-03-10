@@ -148,20 +148,9 @@ $breadcrumbData = getBreadcrumbStructuredData($currentPath);
                     <li class="nav-item">
                         <a class="nav-link" href="/index#contact">Contact</a>
                     </li>
-                    <li class="nav-item d-none d-lg-block ms-2">
-                        <a class="btn btn-outline-light px-4" href="/volunteers.php">
-                            <i class="fas fa-hands-helping me-1"></i> Volunteer now
-                        </a>
-                       
-                    </li>
                     <li class="nav-item d-none d-lg-block ms-2"> <a class="btn btn-outline-light px-4" href="/giving.php">
                             <i class="fas fa-hands-helping me-1"></i> Give now
                         </a></li>
-                    <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="volunteers.php">
-                            <i class="fas fa-hands-helping me-1"></i> Volunteer now
-                        </a>
-                    </li>
                     <li class="nav-item d-lg-none">
                         <a class="nav-link" href="giving.php">
                             <i class="fas fa-hands-helping me-1"></i> Give now
