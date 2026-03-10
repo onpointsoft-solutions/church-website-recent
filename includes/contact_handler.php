@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             // Recipients
             $mail->setFrom($email, $name);
-            $mail->addAddress('idkituyi@gmail.com', 'Christ Ekklesia Fellowship');
+            $mail->addAddress('vincentbettoh@gmail.com', 'Christ Ekklesia Fellowship');
             $mail->addReplyTo($email, $name);
             
             // Content
